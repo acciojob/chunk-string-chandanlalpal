@@ -1,5 +1,7 @@
 // Question: Chunk String 
-function chunkStr(str, size) {
+function stringChop(str, size) {
+	if (!str) return [];
+	    size = Math.max(1, Number(size));
     let chunks = [];
     for(let i=0; i<str.length; i = i + size) {
         let subStr = str.slice(i, i+size);
